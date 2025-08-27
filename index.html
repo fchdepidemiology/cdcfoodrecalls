@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CDC Food Recall Widget</title>
   <style>
-    body { margin: 0; padding: 0; display: flex; justify-content: center; }
-    .wrap { max-width: 280px; width: 100%; }
+    /* Keep the page simple and center the widget */
+    html, body { margin: 0; padding: 0; background: #fff; }
+    body { display: flex; justify-content: center; }
+    .wrap { max-width: 320px; width: 100%; padding: 16px; box-sizing: border-box; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div data-cdc-widget="FoodRecall"
-         data-instance-name="FoodRecallWidget"
-         data-style-path="undefined"
-         data-widget-max-width="280px"
-         data-content-url="undefined"></div>
+    <div
+      data-cdc-widget="FoodRecall"
+      data-instance-name="FoodRecallWidget"
+      data-widget-max-width="320px">
+    </div>
   </div>
   <script src="https://tools.cdc.gov/1M1B"></script>
 </body>
