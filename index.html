@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CDC Food Recall Widget</title>
   <style>
-    /* Keep the page simple and center the widget */
     html, body { margin: 0; padding: 0; background: #fff; }
     body { display: flex; justify-content: center; }
-    .wrap { max-width: 320px; width: 100%; padding: 16px; box-sizing: border-box; }
+    .wrap { max-width: 340px; width: 100%; padding: 16px; box-sizing: border-box; }
   </style>
+  <!-- Optional: start connections faster -->
+  <link rel="preconnect" href="https://tools.cdc.gov" crossorigin>
 </head>
 <body>
   <div class="wrap">
     <div
       data-cdc-widget="FoodRecall"
       data-instance-name="FoodRecallWidget"
+      data-news-feed-type="xml"
+      data-news-feed="https://tools.cdc.gov/api/v2/resources/media/316422.rss"
       data-widget-max-width="320px">
     </div>
   </div>
